@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-product-card</title>
+    <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #ffa7a7;
+    }
+
+    header {
+      background: #641212;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #00bcd4;
+      margin-bottom: 15px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .skill {
+      background: #fff;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .project img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .project h3 {
+      padding: 10px;
+    }
+
+    .project p {
+      padding: 0 10px 10px;
+      font-size: 14px;
+    }
+     .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      padding: 10px;
+      border: none;
+      background: #00bcd4;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background: #0097a7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 30px;
+    }
+  </style>
+  </head>
+  <body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="profile" class="profile">
+    <img src="pic.jpg" alt="Profile Picture"  width="42" height="42" style="float:left">
+    <h2>April Marie Recto</h2>
+    <p>A BSIT Student That have a Big Dream</p>
+      </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a BSIT student passionate about creating web applications and innovative solutions.
+      With continuous learning and dedication, I aim to grow into a successful IT professional.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Figma</div>
+    </div>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="pro1.png" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>A Figma Project Nike Product.</p>
+      </div>
+      <div class="project">
+        <img src="pro2.png" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>A Figma Project That a feature of online selling delivery processing .</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 april/gerlyn. All Rights Reserved.</p>
+  </footer>
+
+  </body>
+</html>
